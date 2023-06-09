@@ -1,3 +1,9 @@
+/*
+INTEGRANTES DA DUPLA:
+-Guilherme Matheus de Jesus de Araujo
+-Felipe Cunegundes Alves Lourenço
+*/
+
 #include <stdio.h>
 //Variáveis globais, na qual vão ter seus valores modificados em diferentes escopos
 double peso = 0, peso_Max = 0, peso_Min = 3000000000, peso_Velho = 0, peso_Novo = 0, peso_Total = 0, preco_arroba = 0;
@@ -29,14 +35,14 @@ int main (void)
 
     if(escolha == 4) // Esse if servirá para parar o programa.
       break;
-    if(escolha == 3) //Esse if servirá para reiniciar o valores das variáveis por uma função.
+    else if(escolha == 3) //Esse if servirá para reiniciar o valores das variáveis por uma função.
       Limpeza();
-    if(escolha == 2) //Esse if sevirá para finalizar o lançamento e mostrar o relatório por uma função.
+    else if(escolha == 2) //Esse if sevirá para finalizar o lançamento e mostrar o relatório por uma função.
     {
       MostrarRelatorio(preco_arroba);
       break; 
     }
-    if(escolha == 1) //Esse if servirá para direcionar o usuário para a função cadastroAnimal por uma função.
+    else if(escolha == 1) //Esse if servirá para direcionar o usuário para a função cadastroAnimal por uma função.
       cadastroAnimal();
     else
       printf("Escolha invalida!\n");
